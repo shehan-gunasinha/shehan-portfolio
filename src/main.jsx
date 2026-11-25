@@ -8,15 +8,15 @@ import './style.css';
 const asset = (p) => (/^(https?:)?\/\//.test(p) ? p : import.meta.env.BASE_URL + p.replace(/^\//, ''));
 
 const PROFILE = {
-  photo: 'profile.jpg', // put your photo at public/profile.jpg
+  photo: 'profile/profile.jpg',
   initials: 'SG',
   name: 'Shehan Gunasinha',
   role: 'Software Engineer',
   intro: 'I build useful software, reliable backend systems, and practical automation. I enjoy turning ideas and real-world problems into clean, maintainable solutions.',
-  email: 'YOUR_EMAIL@example.com',
-  github: 'https://github.com/YOUR_GITHUB_USERNAME',
-  linkedin: 'https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/',
-  resume: 'resume.pdf'
+  email: 'shehangunasinha814@gmail.com',
+  github: 'https://github.com/shehan-gunasinha',
+  linkedin: 'https://www.linkedin.com/in/shehan-gunasinha-13b754290/',
+  resume: 'profile/Shehan_gunasinha_CV.pdf'
 };
 const skills = [
   { icon: Code2, title: 'Languages & Frontend', items: ['Java', 'JavaScript', 'React', 'HTML', 'CSS'] },
@@ -25,15 +25,34 @@ const skills = [
   { icon: Workflow, title: 'Tools & Automation', items: ['Git', 'Docker', 'n8n', 'Maven', 'IntelliJ IDEA'] }
 ];
 const projects = [
-  { number: '01', title: 'CareerMate AI', type: 'AI · Career Platform', desc: 'A career support platform concept designed to help job seekers organize their search, discover opportunities, and make their job-hunting workflow more efficient.', tech: ['React', 'Spring Boot', 'AI', 'PostgreSQL'], github: 'https://github.com/YOUR_GITHUB_USERNAME/careermate-ai', demo: '', media: [
-    { type: 'image', src: 'media/sample-1.svg', caption: 'Dashboard' },
-    { type: 'image', src: 'media/sample-2.svg', caption: 'Job tracker' }
-    // { type: 'video', src: 'media/careermate-demo.mp4', poster: 'media/careermate-poster.png', caption: 'Demo' },
+  { number: '01', title: 'CareerMate AI', type: 'AI · Career Platform', desc: 'A career support platform concept designed to help job seekers organize their search, discover opportunities, and make their job-hunting workflow more efficient.', tech: ['React', 'Spring Boot', 'AI', 'PostgreSQL'], github: 'https://github.com/shehan-gunasinha/careermate-AI', demo: '', media: [
+    { type: 'image', src: 'projects/careermat-ai/cm1.png' },
+    { type: 'image', src: 'projects/careermat-ai/cm2.png' },
+    { type: 'image', src: 'projects/careermat-ai/cm3.png' },
+    { type: 'video', src: 'projects/careermat-ai/cm_demo.mp4', caption: 'Demo' },
     // { type: 'youtube', src: 'YOUTUBE_VIDEO_ID', caption: 'Walkthrough' }
   ] },
-  { number: '02', title: 'Smart Canteen Management', type: 'Full-Stack Application', desc: 'A canteen management solution focused on streamlining food ordering and day-to-day operations through a digital workflow.', tech: ['Java', 'Spring Boot', 'React', 'Database'], github: 'https://github.com/YOUR_GITHUB_USERNAME/smart-canteen', demo: '', media: [] },
-  { number: '03', title: 'JobMagnet', type: 'Web Application', desc: 'A job-search focused project that helps users navigate job opportunities and manage their application process in one place.', tech: ['Web Development', 'JavaScript', 'API'], github: 'https://github.com/YOUR_GITHUB_USERNAME/jobmagnet', demo: '', media: [] },
-  { number: '04', title: 'Distributed Cache Invalidation', type: 'Backend · Messaging', desc: 'Implemented a Kafka-based cache invalidation broadcast approach to help synchronize cache-clearing events across application instances in a distributed environment.', tech: ['Java', 'Kafka', 'Spring', 'Microservices'], github: '', demo: '', media: [] }
+  { number: '02', title: 'Smart Canteen Management', type: 'Full-Stack Application', desc: 'A canteen management solution focused on streamlining food ordering and day-to-day operations through a digital workflow.', tech: ['Java', 'Spring Boot', 'React', 'Database'], github: 'https://github.com/shehan-gunasinha/e20-3yp-Smart-Canteen-Management-System', demo: '', media: [
+      { type: 'image', src: 'projects/3yp/cms1.jpg' },
+      { type: 'image', src: 'projects/3yp/cms2.jpg' },
+      { type: 'image', src: 'projects/3yp/cms3.jpg' },
+      { type: 'image', src: 'projects/3yp/cms4.jpg' },
+   ] },
+
+  { number: '03', title: 'JobMagnet', type: 'Web Application', desc: 'A job-search focused project that helps users navigate job opportunities and manage their application process in one place.', tech: ['Web Development', 'JavaScript', 'API'], github: 'https://github.com/shehan-gunasinha/jobMagnet', demo: '', media: [
+      { type: 'image', src: 'projects/jobmagnet/jm1.jpeg' },
+      { type: 'image', src: 'projects/jobmagnet/jm2.jpeg' },
+      { type: 'image', src: 'projects/jobmagnet/jm3.jpeg' },
+      { type: 'image', src: 'projects/jobmagnet/jm4.jpeg' },
+  ] },
+
+{number: '04',title: 'Watermark Removal',type: 'AI · Image Processing',desc: 'An image processing application designed to remove unwanted watermarks from images, providing users with a simple and efficient way to clean up their images.',tech: ['Python', 'Image Processing', 'Computer Vision', 'AI'],github: 'https://github.com/shehan-gunasinha/water-mark-removal',demo: '',media: [
+      { type: 'image', src: 'projects/watermark/wm1.jpeg', caption: 'automatically' },
+      { type: 'image', src: 'projects/watermark/wm2.jpeg', caption: 'manually' },
+      { type: 'video', src: 'projects/watermark/demo.mp4', caption: 'Demo' },
+    ] },
+
+  { number: '05', title: 'Distributed Cache Invalidation', type: 'Backend · Messaging', desc: 'Implemented a Kafka-based cache invalidation broadcast approach to help synchronize cache-clearing events across application instances in a distributed environment.', tech: ['Java', 'Kafka', 'Spring', 'Microservices'], github: '', demo: '', media: [] }
 ];
 const certifications = [
   { title: 'Your first certification', issuer: 'Issuing organization', date: '2026', image: '', credential: '' },
